@@ -83,6 +83,14 @@ exports.decorateConfig = (config) => (
                 border-bottom: 2px solid #fba506;
                 padding: 2px 0; 
             }
+            .header_windowHeader {
+                border: 0;
+                border-bottom-width: 2px;
+                border-color: #313131 !important;
+                border-style: solid;
+                left: 2px;
+                width: calc(100% - 4px);
+            }
             .hyper_main {
                 border-radius: 2px;
                 border-style: solid;
