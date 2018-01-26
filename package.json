@@ -1,0 +1,24 @@
+{
+  "name": "hyper-monokai-deluxe",
+  "version": "1.0.0",
+  "description": "Monokai theme for hyper terminal. Extended",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hummal/hyper-monokai-deluxe.git"
+  },
+  "keywords": [
+    "hyper",
+    "hyper.app",
+    "hyperterm"
+  ],
+  "author": "Philipp Winterle <philipp.winterle@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hummal/hyper-monokai-deluxe/issues"
+  },
+  "homepage": "https://github.com/hummal/hyper-monokai-deluxe#readme"
+}
