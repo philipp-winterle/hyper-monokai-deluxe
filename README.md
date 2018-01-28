@@ -1,9 +1,25 @@
 # Hyper Monokai Deluxe - Theme
 [![npm](https://img.shields.io/npm/dm/hyper-monokai-deluxe.svg?label=DL&style=flat-square)]()
 
+> A monokai theme with deluxe content like borders and highlighted tabs for [hyper](https://hyper.is), the best looking terminal on all plattforms
+
 ![Hyper Monokai Deluxe Theme](https://raw.githubusercontent.com/hummal/hyper-monokai-deluxe/master/example.png)
 
 *Inspired by the original Hyper Monokai Theme*
+
+## Installation
+* Insert "hyper-monokai-deluxe" into your .hyper.js config
+```javascript
+  ...
+  plugins: [
+    'hyper-monokai-deluxe'
+  ],
+  ...
+```
+* Use [hpm](https://github.com/zeit/hpm) to install the theme
+```bash
+  hpm install hyper-monokai-deluxe
+```
 
 ## "So what's the difference? What is the deluxe?"
 * You liked hyper-border but like me you didn't like how it uses background gradient to achieve the "borders"? 
