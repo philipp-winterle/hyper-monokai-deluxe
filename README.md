@@ -1,4 +1,5 @@
 # Hyper Monokai Deluxe - Theme
+[![npm](https://img.shields.io/npm/dm/hyper-monokai-deluxe.svg?label=DL&style=flat-square)]()
 
 ![Hyper Monokai Deluxe Theme](https://raw.githubusercontent.com/hummal/hyper-monokai-deluxe/master/example.png)
 
