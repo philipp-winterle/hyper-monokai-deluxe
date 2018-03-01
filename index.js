@@ -85,6 +85,7 @@ exports.decorateConfig = config => {
                 height: 100%;
                 border-top: ${borderWidth} solid #fc1da7;
                 border-bottom: ${borderWidth} solid #fba506;
+                padding: ${borderWidth} 0;
             }
             .header_windowHeader {
                 border: 0;
@@ -101,8 +102,8 @@ exports.decorateConfig = config => {
                 border-radius: 2px;
                 border-style: solid;
                 border-image: linear-gradient(to bottom, #fc1da7, #fba506) 1 100%;
+                border-bottom: 0;
                 border-width: ${borderWidth} !important;
-                
             }
             .tabs_list {
                 margin: 0 ${borderWidth} !important;
