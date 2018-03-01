@@ -49,8 +49,12 @@ const colors = {
     grayscale: monokaiColors.grayscale
 };
 
-exports.decorateConfig = (config) => (
-    Object.assign({}, config, {
+exports.decorateConfig = config => {
+    const borderWidth =
+        (config.monokaiDeluxe && config.monokaiDeluxe.borderWidth) ||
+        mainBorderWidth;
+
+    return Object.assign({}, config, {
         backgroundColor: backgroundColor,
         foregroundColor: foregroundColor,
         cursorColor:  colors.cyan || config.cursorColor,
@@ -67,7 +71,7 @@ exports.decorateConfig = (config) => (
                 background: rgba(67, 76, 94, 0.8) !important;
             }
             .cursor-node {
-                border-left-width: 2px;
+                border-left-width: ${borderWidth};
             }
             .cursor-node[focus=true]:not([moving]) {
                 animation: blink-animation .777s ease-in-out infinite;
@@ -77,30 +81,32 @@ exports.decorateConfig = (config) => (
         `,
         css: `
             ${config.css || ''}
-            html{
+            html {
                 height: 100%;
-                border-top: 2px solid #fc1da7;
-                border-bottom: 2px solid #fba506;
-                padding: 2px 0; 
+                border-top: ${borderWidth} solid #fc1da7;
+                border-bottom: ${borderWidth} solid #fba506;
+                padding: ${borderWidth} 0;
             }
             .header_windowHeader {
                 border: 0;
-                border-bottom-width: 2px;
+                border-bottom-width: ${borderWidth};
                 border-color: #313131 !important;
                 border-style: solid;
-                left: 2px;
-                width: calc(100% - 4px);
+                left: ${borderWidth};
+                width: calc(100% - calc(${borderWidth} * 2));
+            }
+            .header_header {
+                top: ${borderWidth};
             }
             .hyper_main {
                 border-radius: 2px;
                 border-style: solid;
                 border-image: linear-gradient(to bottom, #fc1da7, #fba506) 1 100%;
                 border-bottom: 0;
-                border-width: ${mainBorderWidth} !important;
-                
+                border-width: ${borderWidth} !important;
             }
             .tabs_list {
-                margin: 0 2px!important;
+                margin: 0 ${borderWidth} !important;
             }
             .tab_tab {
                 background-color: ${backgroundColor} !important;
@@ -110,7 +116,6 @@ exports.decorateConfig = (config) => (
                 box-shadow: 0px 2px 0px 0px rgba(0, 181, 181, 1);
                 font-weight: bold;
             }
-            
         `
-    })
-);
+    });
+};

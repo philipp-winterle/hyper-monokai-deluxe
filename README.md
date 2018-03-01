@@ -28,6 +28,19 @@ I used real borders on the right places to achieve the same. :bomb:
 hightlighted tabs in monokai style. :gem:
 * You liked monokai? Yeah, that is still the same. :couple_with_heart:
 
+## Customization
+Theme settings can be customized by setting the "monokaiDeluxe" object in your .hyper.js config
+```javascript
+  ...
+  config: {
+    monokaiDeluxe: {
+      borderWidth: '2px'
+    }
+  }
+  ...
+```
+*Currently only the border width can be customized*
+
 ## Resources and inspiration
 * [hyperterm-monokai](https://github.com/arkhamdev/hyperterm-monokai)
 * [hyperborder](https://github.com/webmatze/hyperborder)
