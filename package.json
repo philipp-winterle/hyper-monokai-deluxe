@@ -1,6 +1,6 @@
 {
   "name": "hyper-monokai-deluxe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Monokai theme for hyper terminal. Extended",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "hyper",
     "hyper.app",
-    "hyperterm"
+    "hyperterm",
+    "monokai"
   ],
   "author": "Philipp Winterle <philipp.winterle@gmail.com>",
   "license": "GPL-3.0",

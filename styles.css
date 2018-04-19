@@ -1,0 +1,56 @@
+* {
+    -webkit-font-feature-settings: "liga" on, "calt" on, "dlig" on !important;
+    text-rendering: optimizeLegibility !important;
+}
+/* v1* Fallback */
+html {
+    height: 100%;
+    border-top: ${borderWidth} solid #fc1da7;
+    border-bottom: ${borderWidth} solid #fba506;
+    padding: ${borderWidth} 0;
+}
+
+.hyper_main {
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #fc1da7, #fba506) 1 100%;
+    border-width: ${borderWidth} !important;
+}
+
+.hyper_main .header_header {
+    border-top: ${borderWidth} solid #fc1da7;
+}
+
+.hyper_main .terms_terms {
+    bottom: -${borderWidth};
+    border-bottom: ${borderWidth} solid #fba506;
+}
+
+.header_windowHeader {
+    border: 2px solid #313131;
+    top: ${borderWidth};
+    left: ${borderWidth};
+    width: calc(100% - calc(10px * 2));
+}
+
+.header_windowHeader .header_hamburgerMenuLeft {
+    top: ${borderWidth};
+    left: ${borderWidth};
+}
+
+.header_windowHeader .header_windowControls {
+    right: ${borderWidth};
+}
+
+
+.tabs_list {
+    margin: 0 ${borderWidth} !important;
+}
+.tab_tab {
+    background-color: ${backgroundColor} !important;
+    box-shadow: 0px 2px 0px 0px rgba(0, 181, 181, 0.15);;
+}
+.tab_tab.tab_active {
+    background-color: ${tabActiveBackground} !important;
+    box-shadow: 0px 2px 0px 0px rgba(0, 181, 181, 1);
+    font-weight: bold;
+}
