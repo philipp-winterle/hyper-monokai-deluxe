@@ -18,18 +18,20 @@ html {
 
 .hyper_main .header_header {
     border-top: ${borderWidth} solid #fc1da7;
+    top: 0;
 }
 
 .hyper_main .terms_terms {
     bottom: -${borderWidth};
     border-bottom: ${borderWidth} solid #fba506;
+    left: -1px; /* fix for small line at bottom left */
 }
 
 .header_windowHeader {
-    border: 2px solid #313131;
+    border-bottom: 2px solid #313131;
     top: ${borderWidth};
     left: ${borderWidth};
-    width: calc(100% - calc(10px * 2));
+    width: calc(100% - calc(${borderWidth} * 2));
 }
 
 .header_windowHeader .header_hamburgerMenuLeft {
