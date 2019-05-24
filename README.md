@@ -34,12 +34,22 @@ Theme settings can be customized by setting the "monokaiDeluxe" object in your .
   ...
   config: {
     monokaiDeluxe: {
-      borderWidth: '2px'
+      borderWidth: '2px',
+      theme: 'reloaded'
     }
   }
   ...
 ```
-*Currently only the border width can be customized*
+### Options
+
+##### borderWidth
+
+- adjusts the thickness of the border around the whole window. OSX windows may have a maximum with border top to prevent traffic lights going ugly. Type: String. Default: '2px'
+
+##### theme
+
+- Currently there is another theme with the same visual style but better css logic behind. This is for testing purposes at the moment. Type: String. Default: 'default'
+Values: 'default', 'reloaded'
 
 ## Resources and inspiration
 * [hyperterm-monokai](https://github.com/arkhamdev/hyperterm-monokai)

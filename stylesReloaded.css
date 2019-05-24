@@ -10,18 +10,32 @@ html {
 }
 
 .hyper_main {
-    border-style: solid;
-    border-image: linear-gradient(to bottom, #fc1da7, #fba506) 1 100%;
-    border-width: ${borderWidth} !important;
+    position: absolute;
+    border: ${borderWidth} solid transparent !important;
     background-color: ${backgroundColor} !important;
+    background-clip: padding-box;
+}
+
+.hyper_main:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: -${borderWidth};
+    border-radius: inherit;
+    background: linear-gradient(to right, #fc1da7, #fba506);
+}
+
+.hyper_main.hyper_mainRounded {
+    border-radius: 4px;
 }
 
 .hyper_main .header_header {
-    border-top: ${borderWidth} solid #fc1da7;
+    position: static;
     border-bottom: 1px solid #424242;
-    left: ${borderWidth};
-    right: ${borderWidth};
-    top: 0;
 }
 
 .hyper_main .header_header.header_headerRounded {
@@ -30,10 +44,11 @@ html {
 }
 
 .hyper_main .header_header .header_windowHeader {
-    border-bottom: 2px solid #424242;
-    top: ${borderWidth};
-    left: ${borderWidth};
-    width: calc(100% - calc(${borderWidth} * 2));
+    position: static;
+}
+
+.hyper_main .header_header .header_windowHeader.header_windowHeaderWithBorder {
+    border-bottom: 1px solid #424242;
 }
 
 .hyper_main .header_windowHeader .header_hamburgerMenuLeft {
@@ -44,6 +59,11 @@ html {
 .hyper_main .header_windowHeader .header_windowControls {
     right: ${borderWidth};
     top: ${borderWidth};
+}
+
+
+.hyper_main .header_header .tabs_nav {
+    position: static !important;
 }
 
 .hyper_main .header_header .tab_tab {
@@ -63,18 +83,35 @@ html {
     font-weight: bold;
 }
 
+
 .hyper_main .terms_terms {
-    top: ${borderWidth};
-    bottom: -${borderWidth};
-    border-bottom: ${borderWidth} solid #fba506;
+    position: static;
+    width: 100%;
+    height: calc(100% - 35px);
+    margin: 0;
 }
+
+.hyper_main .terms_terms.terms_termsShifted {
+    height: calc(100% - 69px);
+}
+
+.hyper_main .terms_terms .terms_termGroup .terminal ::-webkit-scrollbar-thumb{
+    background-color: #595959;
+}
+
+.hyper_main .terms_terms .terms_termGroup {
+    position: static;
+    display:none;
+}
+
+.hyper_main .terms_terms .terms_termGroup.terms_termGroupActive {
+    display:block;
+}
+
 
 .hyper_main .terms_terms.terms_termsNotShifted {
     margin-top: ${borderWidth};
     top: 0;
 }
 
-.hyper_main .terms_terms .terms_termGroup .terminal ::-webkit-scrollbar-thumb{
-    background-color: #595959;
-}
 

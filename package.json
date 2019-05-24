@@ -1,6 +1,6 @@
 {
   "name": "hyper-monokai-deluxe",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Monokai theme for hyper terminal. Extended",
   "main": "index.js",
   "scripts": {
