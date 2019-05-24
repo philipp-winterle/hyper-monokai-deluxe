@@ -40,7 +40,7 @@ html {
 
 .hyper_main .header_header.header_headerRounded {
     border-radius:0;
-    border-top: 2px;
+    border-top-width: 2px;
 }
 
 .hyper_main .header_header .header_windowHeader {
@@ -91,6 +91,9 @@ html {
     margin: 0;
 }
 
+.hyper_main .terms_terms.terms_termsNotShifted {
+    margin-top: 0;
+}
 .hyper_main .terms_terms.terms_termsShifted {
     height: calc(100% - 69px);
 }
